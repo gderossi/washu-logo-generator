@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>WashU Logo Generator</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <h1>WashU Logo Generator</h1>
+
+  <div id=logoTypeControls>
+    <h2>Logo Type:</h2>
+    <button class=changeLogoType id=b1 type="button" onclick="changeLogoType(1)">One Line</button>
+    <button class=changeLogoType id=b2 type="button" onclick="changeLogoType(2)">Two Lines</button>
+    <button class=changeLogoType id=b3 type="button" onclick="changeLogoType(3)">Three Lines</button>
+  </div>
+
+  <div id=inputDiv>
+    <input id=input type="text" placeholder="Type here..." oninput="updateLogo()"/>
+  </div>
+
+  <div id=output>
+    <img id=outputBase src="2.png" alt="WashU Logo"/>
+    <p id=outputText></p>
+  </div>
+
+  <footer>Made by Grayson Derossi</footer>
+
+</body>
+
+</html>

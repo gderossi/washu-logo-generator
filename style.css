@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "lb";
+  src: url("Libre Baskerville/LibreBaskerville-Regular.otf");
+}
+
+@font-face {
+  font-family: "lbBold";
+  src: url("Libre Baskerville/LibreBaskerville-Bold.otf");
+}
+
+@font-face {
+  font-family: "lbItalic";
+  src: url("Libre Baskerville/LibreBaskerville-Italic.otf");
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  cursor: default;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #f8f8ff;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 4em;
+  font-family: lbBold;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+#inputText {
+  margin: auto;
+  text-align: center;
+  font-size: 96px;
+  font-family: lb;
+  transform: scaleY(1.5);
+  letter-spacing: -6px;
+}
+
+#logoTypeControls {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: lb;
+}
+
+.changeLogoType {
+  font-size: 1.5em;
+  margin: auto;
+  font-family: sans-serif;
+  background-color: inherit;
+  border: 2px solid black;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.changeLogoType:hover {
+  background-color: #ebc034;
+  cursor: pointer;
+}
+
+#inputDiv {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#input {
+  font-size: 2em;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+
+#output {
+  border: 1px solid gray;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#outputBase {
+  margin: auto;
+  max-width: 100%;
+}
+
+#outputText {
+  position: fixed;
+  font-size: 8em;
+  font-family: lb;
+  transform: scaleY(1.2);
+  letter-spacing: -6px;
+}
+
+footer {
+  font-family: lb;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
