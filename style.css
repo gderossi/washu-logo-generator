@@ -34,7 +34,7 @@ h1 {
   border-bottom: 1px solid black;
   width: 50%;
 }
-
+909.08
 #inputText {
   margin: auto;
   text-align: center;
@@ -88,23 +88,52 @@ h2 {
 #output {
   border: 1px solid gray;
   width: 70%;
+  height: 50%;
+  padding: 5px;
   margin: auto;
+  position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+#dynamicOutput {
+  width: 90%;
+  margin: auto;
+  margin-top: 0;
   position: relative;
 }
 
-#outputBase {
+#scaledOutput {
+  transform-origin: left top;
+}
+
+#logoTop {
   margin: auto;
-  max-width: 100%;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+#logoBot {
+  position: relative;
+  width: 100%;
+}
+
+.oneLine {
+  margin: auto;
+}
+
+.moreLines {
+  margin: auto;
+  margin-top: 0;
 }
 
 #outputText {
-  position: fixed;
   font-size: 8em;
   font-family: lb;
   transform: scaleY(1.2);
   letter-spacing: -6px;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 footer {
