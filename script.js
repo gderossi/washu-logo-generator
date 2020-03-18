@@ -6,18 +6,19 @@ function updateLogo(){
 
 function scaleLogo(){
   var dynamicOutput = document.getElementById("dynamicOutput");
-  var scaledOutput = document.getElementById("scaledOutput");
+  var scaledLeft = document.getElementById("scaledLeft");
+  var scaledRight = document.getElementById("scaledRight");
   var logoBot = document.getElementById("logoBot");
   var outputText = document.getElementById("outputText");
-  outputText.style.transform = "scale(1)";
-  var outputWidth = dynamicOutput.offsetWidth * 0.9;
+  var outputWidth = dynamicOutput.offsetWidth;
   var unscaledWidth = logoBot.offsetWidth + outputText.offsetWidth;
   var scale = outputWidth / unscaledWidth;
 
-  scaledOutput.width = unscaledWidth;
-  console.log(scaledOutput.width);
-  scaledOutput.style.transform = "scale(" + scale + ")";
-  console.log(scaledOutput.offsetWidth);
+  //scaledLeft.width = logoBot.offsetWidth;
+  dynamicOutput.style.transform = "scale(" + scale + ")";
+
+  //scaledRight.width = outputText.offsetWidth;
+  //scaledRight.style.transform = "scale(" + scale + ")";
 }
 
 function changeLogoType(lines){
@@ -35,4 +36,6 @@ function changeLogoType(lines){
     top.data = "Logos/" + lines + "top.svg";
     bot.data = "Logos/" + lines + "bot.svg";
   }
+
+  scaleLogo();
 }

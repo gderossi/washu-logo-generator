@@ -34,15 +34,6 @@ h1 {
   border-bottom: 1px solid black;
   width: 50%;
 }
-909.08
-#inputText {
-  margin: auto;
-  text-align: center;
-  font-size: 96px;
-  font-family: lb;
-  transform: scaleY(1.5);
-  letter-spacing: -6px;
-}
 
 #logoTypeControls {
   width: 50%;
@@ -91,31 +82,36 @@ h2 {
   height: 50%;
   padding: 5px;
   margin: auto;
-  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+object {
+  display: block;
 }
 
 #dynamicOutput {
   width: 90%;
-  margin: auto;
-  margin-top: 0;
-  position: relative;
+  margin: 0;
+  display: flex;
+  transform-origin: top left;
 }
 
-#scaledOutput {
-  transform-origin: left top;
+#scaledRight {
+  transform: scaleY(1.1);
+  margin-left: 0.5em;
+  transform-origin: bottom;
 }
 
 #logoTop {
-  margin: auto;
+  margin: 0 auto;
   width: 90%;
-  margin-bottom: 0;
 }
 
 #logoBot {
-  position: relative;
-  width: 100%;
+  width: 1000px;
 }
 
 .oneLine {
@@ -128,12 +124,12 @@ h2 {
 }
 
 #outputText {
-  font-size: 8em;
+  font-size: 10.7em;
   font-family: lb;
-  transform: scaleY(1.2);
   letter-spacing: -6px;
   margin-top: 0;
   white-space: nowrap;
+  padding-left: 0.1em;
 }
 
 footer {
