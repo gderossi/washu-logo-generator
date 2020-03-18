@@ -7,7 +7,7 @@
   <script src="script.js"></script>
 </head>
 
-<body onload="scaleLogo()">
+<body onload="scaleLogo()" onresize="scaleLogo()">
 
   <h1>WashU Logo Generator</h1>
 
@@ -25,13 +25,13 @@
   <div id=output>
     <object id=logoTop data="Logos/2top.svg" type="image/svg+xml"></object>
     <div id=dynamicOutput>
-      <span id=scaledLeft class=scaledOutput>
+      <span id=scaledLeft>
         <object id="logoBot" class="moreLines" data="Logos/2bot.svg" type="image/svg+xml"></object>
       </span>
 
-      <span id="scaledRight" class="scaledOutput">
+      <span id="scaledRight" class="twoLineScaleY">
         <span id="spacing">&nbsp;</span>
-        <span id="outputText"></span>
+        <span id="outputText" class="twoLineOutput"></span>
       </span>
     </div>
   </div>

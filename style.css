@@ -100,9 +100,16 @@ object {
 }
 
 #scaledRight {
-  transform: scaleY(1.1);
   margin-left: 0.5em;
   transform-origin: bottom;
+}
+
+.oneLineScaleY {
+  transform: scaleY(1.2);
+}
+
+.twoLineScaleY {
+  transform: scaleY(1.1);
 }
 
 #logoTop {
@@ -124,11 +131,19 @@ object {
 }
 
 #outputText {
-  font-size: 10.7em;
   font-family: lb;
-  letter-spacing: -6px;
   margin-top: 0;
   white-space: nowrap;
+}
+
+.oneLineOutput {
+  font-size: 4.9em;
+  letter-spacing: -4px;
+}
+
+.twoLineOutput {
+  font-size: 10.7em;
+  letter-spacing: -6px;
   padding-left: 0.1em;
 }
 

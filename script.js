@@ -24,17 +24,28 @@ function scaleLogo(){
 function changeLogoType(lines){
   var top = document.getElementById("logoTop");
   var bot = document.getElementById("logoBot");
+  var scaledRight = document.getElementById("scaledRight");
+  var outputText = document.getElementById("outputText");
   if(lines==1){
     top.style.display = "none";
-    bot.class = "oneLine";
+    bot.className = "oneLine";
     bot.data = "Logos/" + lines + "bot.svg";
-
+    scaledRight.className = "oneLineScaleY";
+    outputText.className = "oneLineOutput";
   }
   else {
     top.style.display = "block";
-    bot.class = "moreLines";
+    bot.className = "moreLines";
     top.data = "Logos/" + lines + "top.svg";
     bot.data = "Logos/" + lines + "bot.svg";
+    if(lines==2){
+      scaledRight.className = "twoLineScaleY";
+      outputText.className = "twoLineOutput";
+    }
+    else {
+      scaledRight.className = "threeLineScaleY";
+      outputText.className = "threeLineOutput";
+    }
   }
 
   scaleLogo();
