@@ -8,36 +8,75 @@
 </head>
 
 <body onload="scaleLogo()" onresize="scaleLogo()">
+  <div id="top">
+    <h1>WashU Logo Generator</h1>
 
-  <h1>WashU Logo Generator</h1>
+    <div id="logoTypeControls">
+      <h2>Logo Type:</h2>
+      <button class="button" type="button" onclick="changeLogoType(1)">One Line</button>
+      <button class="button" type="button" onclick="changeLogoType(2)">Two Lines</button>
+      <button class="button" type="button" onclick="changeLogoType(3)">Three Lines</button>
+      <div id="divider"></div>
+      <button class="button" type="button" onclick="hideContent()">Screenshot Mode</button>
+    </div>
 
-  <div id=logoTypeControls>
-    <h2>Logo Type:</h2>
-    <button class=changeLogoType id=b1 type="button" onclick="changeLogoType(1)">One Line</button>
-    <button class=changeLogoType id=b2 type="button" onclick="changeLogoType(2)">Two Lines</button>
-    <button class=changeLogoType id=b3 type="button" onclick="changeLogoType(3)">Three Lines</button>
+    <div id="inputDiv">
+      <input id="input" type="text" placeholder="Type here..." oninput="updateLogo()"/>
+    </div>
   </div>
 
-  <div id=inputDiv>
-    <input id=input type="text" placeholder="Type here..." oninput="updateLogo()"/>
-  </div>
-
-  <div id=output>
-    <object id=logoTop data="Logos/2top.svg" type="image/svg+xml"></object>
-    <div id=dynamicOutput>
-      <span id=scaledLeft>
-        <object id="logoBot" class="moreLines" data="Logos/2bot.svg" type="image/svg+xml"></object>
+  <div id="output1" class="output invisible">
+    <object class="oneTwoLineLogoTop" data="Logos/1top.svg" type="image/svg+xml"></object>
+    <div id="dynamicOutput1" class="oneTwoLineDynamic">
+      <span>
+        <object id="logoBot1" class="oneLine oneTwoLineLogoBot" data="Logos/1bot.svg" type="image/svg+xml"></object>
       </span>
 
-      <span id="scaledRight" class="twoLineScaleY">
-        <div id="spacing">&nbsp;</div>
-        <span id="outputText" class="twoLineOutput"></span>
+      <span class="oneLineScaleY">
+        <div class="oneTwoLineSpacing">&nbsp;</div>
+        <span id="outputText1" class="oneLineOutput"></span>
       </span>
     </div>
   </div>
 
-  <footer>Made by Grayson Derossi</footer>
+  <div id="output2" class="output">
+    <object class="oneTwoLineLogoTop" data="Logos/2top.svg" type="image/svg+xml"></object>
+    <div id="dynamicOutput2" class="oneTwoLineDynamic">
+      <span>
+        <object id="logoBot2" class="moreLines oneTwoLineLogoBot" data="Logos/2bot.svg" type="image/svg+xml"></object>
+      </span>
+
+      <span class="twoLineScaleY">
+        <div class="oneTwoLineSpacing">&nbsp;</div>
+        <span id="outputText2" class="twoLineOutput"></span>
+      </span>
+    </div>
+  </div>
+
+  <div id="output3" class="output invisible">
+    <div class="threeLineLogoTop">
+      <object id="logoTop3" data="Logos/3top.svg" type="image/svg+xml"></object>
+    </div>
+    <div>
+      <div id="dynamicOutput3" class="threeLineDynamic">
+        <span>
+          <object id="logoBot3" class="moreLines threeLineLogoBot" data="Logos/3bot.svg" type="image/svg+xml"></object>
+        </span>
+
+        <span id="scaledRight" class="threeLineScaleY">
+          <div class="threeLineSpacing">&nbsp;</div>
+          <span id="outputText3" class="threeLineOutput"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <footer id="bottom">Made by Grayson Derossi</footer>
+
+  <button id="show" class="invisible" type="button" onclick="showContent()"></button>
 
 </body>
 
 </html>
+
+<!--Many thanks to Chris Derossi for help debugging-->

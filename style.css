@@ -23,6 +23,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: #f8f8ff;
+  overflow: hidden;
 }
 
 h1 {
@@ -47,8 +48,8 @@ h2 {
   font-family: lb;
 }
 
-.changeLogoType {
-  font-size: 1.5em;
+.button {
+  font-size: 1vw;
   margin: auto;
   font-family: sans-serif;
   background-color: inherit;
@@ -56,9 +57,13 @@ h2 {
   box-shadow: 1px 1px 5px gray;
 }
 
-.changeLogoType:hover {
+.button:hover {
   background-color: #ebc034;
   cursor: pointer;
+}
+
+#divider {
+  border-right: 1px solid black;
 }
 
 #inputDiv {
@@ -75,9 +80,11 @@ h2 {
   margin-bottom: 1em;
 }
 
+.invisible {
+  display: none !important;
+}
 
-#output {
-  border: 1px solid gray;
+.output {
   width: 70%;
   height: 50%;
   padding: 5px;
@@ -85,40 +92,78 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.outputSS {
+  margin-top: 10%;
+}
+
+#output1 {
   justify-content: center;
+}
+
+#output2 {
+  justify-content: center;
+}
+
+#output3 {
+  justify-content: flex-start;
 }
 
 object {
   display: block;
 }
 
-#dynamicOutput {
-  width: 90%;
+.oneTwoLineDynamic {
   margin: 0;
   display: flex;
+  width: 90%;
   transform-origin: top left;
 }
 
-#scaledRight {
-  margin-left: 0.5em;
-  transform-origin: bottom;
+.threeLineDynamic {
+  margin: 0;
+  display: flex;
+  transform-origin: top center;
 }
 
 .oneLineScaleY {
+  margin-left: 0.5em;
   transform: scaleY(1.2);
+  transform-origin: bottom;
 }
 
 .twoLineScaleY {
+  margin-left: 0.5em;
   transform: scaleY(1.1);
+  transform-origin: bottom;
 }
 
-#logoTop {
-  margin: 0 auto;
+.threeLineScaleY {
+  transform: scaleY(1.3);
+  transform-origin: bottom;
+}
+
+.oneTwoLineLogoTop {
   width: 90%;
+  margin: 0 auto;
 }
 
-#logoBot {
+.threeLineLogoTop {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#logoTop3 {
+  width: 100%;
+}
+
+.oneTwoLineLogoBot {
   width: 1000px;
+}
+
+.threeLineLogoBot {
+  width: 200px;
 }
 
 .oneLine {
@@ -130,21 +175,36 @@ object {
   margin-top: 0;
 }
 
-#outputText {
-  font-family: lb;
-  margin-top: 0;
-  white-space: nowrap;
+.oneTwoLineSpacing {
+}
+
+.threeLineSpacing {
+  font-size: 1.7em;
 }
 
 .oneLineOutput {
   font-size: 4.9em;
   letter-spacing: -4px;
+  font-family: lb;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 .twoLineOutput {
   font-size: 10.7em;
   letter-spacing: -6px;
   padding-left: 0.1em;
+  font-family: lb;
+  margin-top: 0;
+  white-space: nowrap;
+}
+
+.threeLineOutput {
+  padding-left: 0.2em;
+  font-size: 11em;
+  font-family: lb;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 footer {
@@ -155,4 +215,15 @@ footer {
   bottom: 1em;
   left: 0;
   right: 0;
+}
+
+#show {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height:100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
