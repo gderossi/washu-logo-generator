@@ -7,7 +7,7 @@
   <script src="script.js"></script>
 </head>
 
-<body onload="scaleLogo()" onresize="scaleLogo()">
+<body id="body" onload="scaleLogo()" onresize="scaleLogo()">
   <div id="top">
     <h1>WashU Logo Generator</h1>
 
@@ -17,7 +17,7 @@
       <button class="button" type="button" onclick="changeLogoType(2)">Two Lines</button>
       <button class="button" type="button" onclick="changeLogoType(3)">Three Lines</button>
       <div id="divider"></div>
-      <button class="button" type="button" onclick="hideContent()">Screenshot Mode</button>
+      <button class="button" type="button" onclick="hideContent()">Screenshot<br>Mode</button>
     </div>
 
     <div id="inputDiv">
@@ -26,7 +26,6 @@
   </div>
 
   <div id="output1" class="output invisible">
-    <object class="oneTwoLineLogoTop" data="Logos/1top.svg" type="image/svg+xml"></object>
     <div id="dynamicOutput1" class="oneTwoLineDynamic">
       <span>
         <object id="logoBot1" class="oneLine oneTwoLineLogoBot" data="Logos/1bot.svg" type="image/svg+xml"></object>
@@ -40,7 +39,9 @@
   </div>
 
   <div id="output2" class="output">
-    <object class="oneTwoLineLogoTop" data="Logos/2top.svg" type="image/svg+xml"></object>
+    <div class="oneTwoLineLogoTop">
+      <object id="logoTop2" data="Logos/2top.svg" type="image/svg+xml"></object>
+    </div>
     <div id="dynamicOutput2" class="oneTwoLineDynamic">
       <span>
         <object id="logoBot2" class="moreLines oneTwoLineLogoBot" data="Logos/2bot.svg" type="image/svg+xml"></object>

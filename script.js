@@ -4,6 +4,7 @@ function updateLogo(){
   document.getElementById("outputText2").innerHTML = inputText;
   document.getElementById("outputText3").innerHTML = inputText;
   scaleLogo();
+  selfQuarantine(inputText);
 }
 
 function scaleLogo(){
@@ -93,4 +94,17 @@ function showContent(){
   output1.classList.remove("outputSS");
   output2.classList.remove("outputSS");
   output3.classList.remove("outputSS");
+}
+
+function selfQuarantine(input){
+  //Congratulations! You found the not-so-secret easter egg!
+  //Stay safe and healthy!
+  var body = document.getElementById("body");
+  if(input=="COVID-19"){
+    body.className = "infected";
+  }
+  else
+  {
+    body.className = "";
+  }
 }

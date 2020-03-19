@@ -55,6 +55,7 @@ h2 {
   background-color: inherit;
   border: 2px solid black;
   box-shadow: 1px 1px 5px gray;
+  white-space: wrap;
 }
 
 .button:hover {
@@ -92,6 +93,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .outputSS {
@@ -99,15 +101,11 @@ h2 {
 }
 
 #output1 {
-  justify-content: center;
+  margin-top: 5%;
 }
 
 #output2 {
-  justify-content: center;
-}
-
-#output3 {
-  justify-content: flex-start;
+  margin-top: 5%;
 }
 
 object {
@@ -154,6 +152,10 @@ object {
   margin: 0 auto;
 }
 
+#logoTop2 {
+  width: 100%;
+}
+
 #logoTop3 {
   width: 100%;
 }
@@ -188,6 +190,7 @@ object {
   font-family: lb;
   margin-top: 0;
   white-space: nowrap;
+  color: #100f0d;
 }
 
 .twoLineOutput {
@@ -197,6 +200,7 @@ object {
   font-family: lb;
   margin-top: 0;
   white-space: nowrap;
+  color: #100f0d;
 }
 
 .threeLineOutput {
@@ -205,6 +209,7 @@ object {
   font-family: lb;
   margin-top: 0;
   white-space: nowrap;
+  color: #100f0d;
 }
 
 footer {
@@ -226,4 +231,11 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.infected {
+  background-image: url(https://media0.giphy.com/media/dVuyBgq2z5gVBkFtDc/giphy.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
