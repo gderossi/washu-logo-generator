@@ -197,7 +197,12 @@ footer {
   margin-top: 0;
 }
 
-.oneTwoLineSpacing {
+.oneLineSpacing {
+  font-size: 0.9em;
+}
+
+.twoLineSpacing {
+  font-size: 1em;
 }
 
 .threeLineSpacing {
