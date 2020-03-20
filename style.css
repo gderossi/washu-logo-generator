@@ -23,17 +23,28 @@ body {
   height: 100%;
   margin: 0;
   background-color: #f8f8ff;
-  overflow: hidden;
+}
+
+header {
+  width: 50%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  margin: auto;
 }
 
 h1 {
   margin: auto;
   text-align: center;
-  font-size: 4em;
+  font-size: 4vw;
   font-family: lbBold;
   padding: 5px;
-  border-bottom: 1px solid black;
-  width: 50%;
+  white-space: nowrap;
+}
+
+#credits {
+  font-family: lbItalic;
+  font-weight: lighter;
+  font-size: 1vw;
 }
 
 #logoTypeControls {
@@ -43,12 +54,12 @@ h1 {
   flex-wrap: nowrap;
 }
 
-h2 {
-  font-size: 1.5em;
+h3 {
+  font-size: 1.5vw;
   font-family: lb;
 }
 
-.button {
+.buttons {
   font-size: 1vw;
   margin: auto;
   font-family: sans-serif;
@@ -58,7 +69,7 @@ h2 {
   white-space: wrap;
 }
 
-.button:hover {
+.buttons:hover {
   background-color: #ebc034;
   cursor: pointer;
 }
@@ -86,7 +97,7 @@ h2 {
 }
 
 .output {
-  width: 70%;
+  max-width: 70%;
   height: 50%;
   padding: 5px;
   margin: auto;
@@ -163,6 +174,15 @@ object {
 .oneTwoLineLogoBot {
   width: 1000px;
 }
+footer {
+  font-family: lb;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
 
 .threeLineLogoBot {
   width: 200px;
@@ -192,6 +212,15 @@ object {
   white-space: nowrap;
   color: #100f0d;
 }
+footer {
+  font-family: lb;
+  text-align: center;
+  margin: auto;
+  position: fixed;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
 
 .twoLineOutput {
   font-size: 10.6em;
@@ -211,16 +240,6 @@ object {
   margin-top: 0;
   white-space: nowrap;
   color: #100f0d;
-}
-
-footer {
-  font-family: lb;
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  bottom: 1em;
-  left: 0;
-  right: 0;
 }
 
 #show {

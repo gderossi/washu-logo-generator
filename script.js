@@ -62,11 +62,9 @@ function changeLogoType(lines){
 
 function hideContent(){
   var top = document.getElementById("top");
-  var bottom = document.getElementById("bottom");
   var show = document.getElementById("show");
 
   top.className = "invisible";
-  bottom.className = "invisible";
   show.className = "";
 
   var output1 = document.getElementById("output1");
@@ -80,11 +78,9 @@ function hideContent(){
 
 function showContent(){
   var top = document.getElementById("top");
-  var bottom = document.getElementById("bottom");
   var show = document.getElementById("show");
 
   top.className = "";
-  bottom.className = "";
   show.className = "invisible";
 
   var output1 = document.getElementById("output1");

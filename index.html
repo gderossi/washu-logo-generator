@@ -10,19 +10,21 @@
 
 <body id="body" onload="scaleLogo()" onresize="scaleLogo()">
   <div id="top">
-    <h1>WashU Logo Generator</h1>
-
+    <header>
+      <h1>WashU Logo Generator</h1>
+      <h2 id="credits">Made by Grayson Derossi</h2>
+    </header>
     <div id="logoTypeControls">
-      <h2>Logo Type:</h2>
-      <button class="button" type="button" onclick="changeLogoType(1)">One Line</button>
-      <button class="button" type="button" onclick="changeLogoType(2)">Two Lines</button>
-      <button class="button" type="button" onclick="changeLogoType(3)">Three Lines</button>
+      <h3>Logo Type:</h3>
+      <button class="buttons" type="button" onclick="changeLogoType(1)">One Line</button>
+      <button class="buttons" type="button" onclick="changeLogoType(2)">Two Lines</button>
+      <button class="buttons" type="button" onclick="changeLogoType(3)">Three Lines</button>
       <div id="divider"></div>
-      <button class="button" type="button" onclick="hideContent()">Screenshot<br>Mode</button>
+      <button class="buttons" type="button" onclick="hideContent()">Screenshot<br>Mode</button>
     </div>
 
     <div id="inputDiv">
-      <input id="input" type="text" placeholder="Type here..." oninput="updateLogo()"/>
+      <input id="input" type="text" placeholder="Type location here..." oninput="updateLogo()"/>
     </div>
   </div>
 
@@ -72,8 +74,6 @@
       </div>
     </div>
   </div>
-
-  <footer id="bottom">Made by Grayson Derossi</footer>
 
   <button id="show" class="invisible" type="button" onclick="showContent()"></button>
 
